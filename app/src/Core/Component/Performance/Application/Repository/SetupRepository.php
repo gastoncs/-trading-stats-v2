@@ -1,49 +1,49 @@
 <?php
 
-namespace App\Repository;
+namespace App\Core\Component\Performance\Application\Repository;
 
-use App\Entity\Setup;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\OptimisticLockException;
-use Doctrine\ORM\ORMException;
-use Doctrine\Persistence\ManagerRegistry;
+use App\Core\Component\Performance\Domain\Entity\Setup;
+use App\Core\Port\Persistence;
 
-/**
- * @method Setup|null find($id, $lockMode = null, $lockVersion = null)
- * @method Setup|null findOneBy(array $criteria, array $orderBy = null)
- * @method Setup[]    findAll()
- * @method Setup[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
- */
-class SetupRepository extends ServiceEntityRepository
+
+class SetupRepository implements SetupRepositoryInterface
 {
-    public function __construct(ManagerRegistry $registry)
+    private $persistence;
+
+    public function __construct(Persistence $persistence)
     {
-        parent::__construct($registry, Setup::class);
+        $this->persistence = $persistence;
+        $this->persistence->getRepository(Setup::class);
     }
 
-    /**
-     * @throws ORMException
-     * @throws OptimisticLockException
-     */
-    public function add(Setup $entity, bool $flush = true): void
+    public function findAll()
+    {
+        return $this->persistence->findAll();
+    }
+
+//    /**
+//     * @throws ORMException
+//     * @throws OptimisticLockException
+//     */
+/*    public function add(Setup $entity, bool $flush = true): void
     {
         $this->_em->persist($entity);
         if ($flush) {
             $this->_em->flush();
         }
-    }
+    }*/
 
-    /**
-     * @throws ORMException
-     * @throws OptimisticLockException
-     */
-    public function remove(Setup $entity, bool $flush = true): void
+//    /**
+//     * @throws ORMException
+//     * @throws OptimisticLockException
+//     */
+/*    public function remove(Setup $entity, bool $flush = true): void
     {
         $this->_em->remove($entity);
         if ($flush) {
             $this->_em->flush();
         }
-    }
+    }*/
 
     // /**
     //  * @return Setup[] Returns an array of Setup objects

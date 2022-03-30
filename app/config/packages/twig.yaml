@@ -1,0 +1,8 @@
+twig:
+    paths:
+        '%kernel.project_dir%/src/UserInterface/Website': 'base'
+        '%kernel.project_dir%/src/UserInterface/Website/Consumer/Performance/Templates': 'performance'
+
+when@test:
+    twig:
+        strict_variables: true

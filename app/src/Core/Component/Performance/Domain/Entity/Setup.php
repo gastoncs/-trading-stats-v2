@@ -1,20 +1,19 @@
 <?php
 
-namespace App\Entity;
+namespace App\Core\Component\Performance\Domain\Entity;
 
-use App\Repository\SetupRepository;
-use Doctrine\ORM\Mapping as ORM;
-
-#[ORM\Entity(repositoryClass: SetupRepository::class)]
 class Setup
 {
-    #[ORM\Id]
-    #[ORM\GeneratedValue]
-    #[ORM\Column(type: 'integer')]
     private $id;
+    private $name;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
     }
 }

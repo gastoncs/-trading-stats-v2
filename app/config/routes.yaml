@@ -1,5 +1,5 @@
 controllers:
-    resource: ../src/UserInterface/Website/Controller/
+    resource: ../src/UserInterface/Website/Consumer/Performance/Controller/*
     type: annotation
 
 kernel:

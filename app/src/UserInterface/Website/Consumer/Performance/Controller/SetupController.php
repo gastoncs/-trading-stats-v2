@@ -1,6 +1,6 @@
 <?php
 
-namespace App\UserInterface\Website\Performance\Controller;
+namespace App\UserInterface\Website\Consumer\Performance\Controller;
 
 use App\Core\Component\Performance\Application\Service\SetupServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
