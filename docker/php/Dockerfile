@@ -21,3 +21,5 @@ RUN curl -sS https://get.symfony.com/cli/installer | bash
 RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 RUN git config --global user.email "gastoncortess@gmail.com" \
     && git config --global user.name "gastoncs"
+
+RUN yarn add bootswatch

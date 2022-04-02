@@ -1,6 +1,7 @@
 twig:
     paths:
         '%kernel.project_dir%/src/UserInterface/Website': 'base'
+        '%kernel.project_dir%/src/UserInterface/Website/default': 'default'
         '%kernel.project_dir%/src/UserInterface/Website/Consumer/Performance/Templates': 'performance'
 
 when@test:
