@@ -16,10 +16,10 @@ class SetupController extends AbstractController
         $this->setupService = $setupService;
     }
 
-    #[Route('/setup', name: 'app_setup')]
+    #[Route('/', name: 'home')]
     public function index(): Response
     {
-        return $this->render('@performance/setup/index.html.twig', [
+        return $this->render('@performance/index.html.twig', [
             'controller_name' => 'SetupController',
         ]);
     }

@@ -23,3 +23,6 @@ RUN git config --global user.email "gastoncortess@gmail.com" \
     && git config --global user.name "gastoncs"
 
 RUN yarn add bootswatch
+
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug
