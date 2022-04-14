@@ -1,52 +1,4 @@
 {
-    "amphp/amp": {
-        "version": "v2.6.2"
-    },
-    "amphp/byte-stream": {
-        "version": "v1.8.1"
-    },
-    "amphp/cache": {
-        "version": "v1.5.0"
-    },
-    "amphp/dns": {
-        "version": "v0.9.15"
-    },
-    "amphp/hpack": {
-        "version": "v3.1.1"
-    },
-    "amphp/http": {
-        "version": "v1.6.3"
-    },
-    "amphp/parser": {
-        "version": "v1.0.0"
-    },
-    "amphp/process": {
-        "version": "v1.1.3"
-    },
-    "amphp/serialization": {
-        "version": "v1.0.0"
-    },
-    "amphp/socket": {
-        "version": "v0.10.13"
-    },
-    "amphp/sync": {
-        "version": "v1.4.2"
-    },
-    "amphp/uri": {
-        "version": "v0.1.4"
-    },
-    "amphp/websocket-client": {
-        "version": "v0.2.4"
-    },
-    "amphp/windows-registry": {
-        "version": "v0.3.3"
-    },
-    "curl/curl": {
-        "version": "2.3.3"
-    },
-    "daverandom/libdns": {
-        "version": "v2.0.2"
-    },
     "doctrine/annotations": {
         "version": "1.13",
         "recipe": {
@@ -137,15 +89,6 @@
     "laminas/laminas-code": {
         "version": "4.5.1"
     },
-    "league/uri-interfaces": {
-        "version": "1.1.1"
-    },
-    "league/uri-parser": {
-        "version": "1.4.1"
-    },
-    "league/uri-schemes": {
-        "version": "1.2.1"
-    },
     "myclabs/deep-copy": {
         "version": "1.11.0"
     },
@@ -198,9 +141,6 @@
             "phpunit.xml.dist",
             "tests/bootstrap.php"
         ]
-    },
-    "polygon-io/api": {
-        "version": "v1.2.3"
     },
     "psr/cache": {
         "version": "3.0.0"

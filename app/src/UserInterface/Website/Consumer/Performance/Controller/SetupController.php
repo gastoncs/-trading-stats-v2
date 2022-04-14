@@ -23,4 +23,14 @@ class SetupController extends AbstractController
             'controller_name' => 'SetupController',
         ]);
     }
+
+    #[Route('/trading-details', name: 'trading-details')]
+    public function tradingDetails(): Response
+    {
+        var_dump($this->setupService->getTickerDetails());
+
+        return $this->render('@performance/index.html.twig', [
+            'controller_name' => 'SetupController',
+        ]);
+    }
 }
